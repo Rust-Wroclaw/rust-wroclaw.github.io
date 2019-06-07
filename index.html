@@ -2,22 +2,37 @@
 layout: base
 ---
 <div class="wrapper">
-    <header>
-        {% if site.compass.logo %}
-        <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
-        </div>
-        {% endif %}
+  <header>
+    {% if site.compass.logo %}
+    <div class="logo-container">
+      <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+    </div>
+    {% endif %}
 
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
-        {% endif %}
-    </header>
-    <main>
-      {% if site.compass.include_content %}
-      <div class="content">
-        {% include content.html %}
-      </div>
-      {% endif %}
-    </main>
+    {% if site.compass.author %}
+    <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+    {% endif %}
+    <div>
+      <h2>What we're about</h2>
+      <p>
+      Hello! We're here to bring Rust to Wroclaw and make it easier to all the Rustaceans here to create a vibrant community.
+      </p>
+
+      <p>
+      We are going to share knowledge and experience in Rust programming.
+      </p>
+
+      <p>
+      Rustaceans of all skill levels are welcome: we are more than happy to help those starting their journey with Rust. Join us. Come to the meeting. Talk to other Rustaceans and... Let’s Rust!</p>
+
+
+    </div>
+  </header>
+  <main>
+    {% if site.compass.include_content %}
+    <div class="content">
+      {% include content.html %}
+    </div>
+    {% endif %}
+  </main>
 </div>
